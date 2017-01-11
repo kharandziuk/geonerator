@@ -4,7 +4,7 @@
   "description": "Simple library to randomly generate simple geographical primitives",
   "main": "dist/geonerator.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",
