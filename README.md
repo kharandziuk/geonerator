@@ -1,2 +1,2 @@
-# geonerator
-Geography generator. Simple library to generate simple geographical primitives. It should make tests for GIS-applications a little bit simpler to write
+# georandom
+Geography generator. Simple library to generate geographical primitives. It should make the tests for some GIS-applications much simpler to write
