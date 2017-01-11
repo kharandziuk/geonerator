@@ -4,7 +4,7 @@ const _ = require('lodash');
 const geolib = require('geolib');
 const should = require('chai').expect;
 
-const generate = require('../lib/geonerator')
+const generate = require('../lib/georandom')
 
 const _Point = (latitude, longitude) => ({latitude, longitude})
 
