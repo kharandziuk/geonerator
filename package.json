@@ -1,0 +1,29 @@
+{
+  "name": "geonerator",
+  "version": "0.0.1",
+  "description": "Simple library to randomly generate simple geographical primitives",
+  "main": "dist/geonerator.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kharandziuk/geonerator.git"
+  },
+  "keywords": [
+    "gis",
+    "geography",
+    "random",
+    "tests"
+  ],
+  "author": "Max Kharandziuk <max.kharandziuk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kharandziuk/geonerator/issues"
+  },
+  "homepage": "https://github.com/kharandziuk/geonerator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
