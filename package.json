@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "geolib": "^2.0.22",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "mathjs": "^3.8.1"
   }
 }
