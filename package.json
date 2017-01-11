@@ -1,14 +1,14 @@
 {
-  "name": "geonerator",
+  "name": "georandom",
   "version": "0.0.1",
   "description": "Simple library to randomly generate simple geographical primitives",
-  "main": "lib/geonerator.js",
+  "main": "lib/georandom.js",
   "scripts": {
     "test": "mocha tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kharandziuk/geonerator.git"
+    "url": "git+https://github.com/kharandziuk/georandom.git"
   },
   "keywords": [
     "gis",
@@ -19,9 +19,9 @@
   "author": "Max Kharandziuk <max.kharandziuk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kharandziuk/geonerator/issues"
+    "url": "https://github.com/kharandziuk/georandom/issues"
   },
-  "homepage": "https://github.com/kharandziuk/geonerator#readme",
+  "homepage": "https://github.com/kharandziuk/georandom#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
