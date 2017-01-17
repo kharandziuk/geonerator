@@ -4,14 +4,14 @@ const _ = require('lodash');
 const geolib = require('geolib');
 const should = require('chai').expect;
 
-const generate = require('../lib/georandom')
+const {BoundingBox, PointInsideBBox} = require('../lib/georandom')
 
 const _Point = (latitude, longitude) => ({latitude, longitude})
 
 describe('bounding box', function() {
 
   it('can generate random bounding box with a default radius', function(){
-    const bbox = generate()
+    const bbox = BoundingBox()
     _(bbox.vertices).each(function(v) {
       should(geolib.getDistance(bbox.center, v)).equal(5) // FIXME: constant
     })
@@ -20,7 +20,7 @@ describe('bounding box', function() {
   it('can generate bounding box with center and radius', function() {
     const RADIUS = 5
     const center = _Point(52, 13)
-    const bbox = generate(center, RADIUS)
+    const bbox = BoundingBox(center, RADIUS)
     _(bbox.vertices).each(function(v) {
       should(geolib.getDistance(center, v)).equal(RADIUS)
     })
@@ -42,8 +42,8 @@ describe('bounding box', function() {
   })
 
   it('can generate a point inside of bounding box', function() {
-    const bbox = generate()
-    const pointInside = bbox.generatePoint()
+    const bbox = BoundingBox()
+    const pointInside = PointInsideBBox(bbox)
     const isPointInside = geolib.isPointInside(pointInside, bbox.vertices)
     should(isPointInside).to.be.true
   })
