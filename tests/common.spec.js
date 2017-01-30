@@ -41,11 +41,20 @@ describe('bounding box', function() {
       ])
   })
 
-  it('can generate a point inside of bounding box', function() {
+  it('can generate a point inside of a bounding box', function() {
     const bbox = BoundingBox()
     const pointInside = PointInsideBBox(bbox)
     const isPointInside = geolib.isPointInside(pointInside, bbox.vertices)
     should(isPointInside).to.be.true
+  })
+
+  it('can generate a point inside of bounding box with distance', function() {
+    const EXPECTED_DISTANCE = 3
+    const bbox = BoundingBox()
+    const pointInside = PointInsideBBox(bbox, EXPECTED_DISTANCE)
+    const isPointInside = geolib.isPointInside(pointInside, bbox.vertices)
+    should(isPointInside).to.be.true
+    should(geolib.getDistance(bbox.center, pointInside)).equal(EXPECTED_DISTANCE)
   })
 })
 
