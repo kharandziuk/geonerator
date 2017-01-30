@@ -1,6 +1,6 @@
 {
   "name": "georandom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple library to randomly generate simple geographical primitives",
   "main": "lib/georandom.js",
   "scripts": {
